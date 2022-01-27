@@ -1,0 +1,31 @@
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+   img {
+       max-width: 100%;
+   }
+
+ul{
+    list-style-type: none;
+}
+.container1 {
+     border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+}
+
+
+
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
