@@ -10,17 +10,20 @@
    }
 
    p { 
-     font-weight: 500;
-   }
+     font-weight: 500; }
 
 ul {
-    list-style-type: none;
-}
+    list-style-type: none; }
+
+
 
 body {
     font-family: 'Red Hat Display', sans-serif;
-    background-color: hsl(225, 100%, 98%);
-  color: hsl(224, 23%, 55%);
+    background-color: black;
+    color: hsl(224, 23%, 55%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     border-radius: 5px;
@@ -33,41 +36,65 @@ body {
   border-radius: 8px;
 }
 
-.container .illustration { 
-    border-radius: (8px 0px 8px 0px);
-    padding: 2rem;
-    border: width 5px; 
-    grid: flex;
+.container .illustration img { 
+  width: 100%;
+  border-radius: 8px 8px 0 0;      
+}
+.content .content-box{
+  padding: 3rem;
+}
+.content-box h2{ 
+  margin-bottom: 20px; 
+  color:hsl(223, 47%, 23%);}
 
-  
-      
+.content-box p{ line-height: 1.5; }
+.container .container2  {
+    background-color:  hsl(225, 100%, 98%);
+    border-radius: 20px;
+    padding : 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.container .content  ul {
-   display: flex;
-  text-align: center;
-  justify-content:space-around;
- 
-  
-  
-}
-.box3 h2 {
-
-  background-color: hsl(245, 75%, 52%);
+.box3{ margin: 3rem 0;}
+button {
   padding: 1rem;
   border-radius: 1rem;
-  border-width: 5px;
-   color:  hsl(225, 100%, 94%);
-  
+  border: none;
+  width: 80%;
+}
+.btn{
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Red Hat Display', sans-serif;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+   
+}
+.btn2{
+  background-color: inherit;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: inherit;
+}
+.box3 .btn:hover{
+  cursor: pointer;
+  opacity: 1;
+  color:  hsl(224, 23%, 55%);
+}
+
+.box3 .btn2:hover {
+  cursor: pointer;
+  opacity: 1;
+  color:  hsl(223, 47%, 23%);
 
 }
-.box3 h2 :hover {
-  cursor: auto;
-  opacity: 0;
-}
-
-
-
 
 
 
