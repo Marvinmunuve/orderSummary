@@ -19,26 +19,36 @@ ul {
 
 body {
     font-family: 'Red Hat Display', sans-serif;
-    background-color: black;
+    background-color: hsl(225, 100%, 94%);
     color: hsl(224, 23%, 55%);
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    border-radius: 5px;
-    padding: 1.25rem;
+    padding: 3rem;
     font-size: 16px;
-  
-}
-.container {
-  background-color: white;
-  border-radius: 8px;
+    
+    
+    height: 100v;
 }
 
-.container .illustration img { 
-  width: 100%;
-  border-radius: 8px 8px 0 0;      
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  
+  
+}
+
+.container .illustration  { 
+background-image: url("./images/illustration-hero.svg");
+height: 250px;
+width: 100%;    
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top;
+ border-radius:20px 20px 0 0; 
 }
 .content .content-box{
   padding: 3rem;
@@ -58,6 +68,8 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+.container2 ul li:first-child {
+  color:hsl(223, 47%, 23%); }
 
 .box3{ margin: 3rem 0;}
 button {
@@ -110,9 +122,16 @@ button {
 
 
 
-      @media (min-width: 500px) {
-        .container {
-          width: 460px;
-          margin: auto;
-        }
+      @media (min-width: 1440px) {
+      body { background-image: url('./images/pattern-background-desktop.svg');
+        background-repeat: no-repeat;
+        background-position-x: center;
       }
+      .content-box h2 {
+        font-size: 20px;
+      }
+      .container {
+      max-width: 500px;
+    
+        }
+      
